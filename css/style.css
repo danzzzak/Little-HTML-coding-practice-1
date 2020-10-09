@@ -6,6 +6,7 @@
 .container{
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .promo {
@@ -75,7 +76,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn{
+.promo .promo_btn, .bonus .bonus_btn{
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -94,6 +95,9 @@ h2.title {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
+}
+.bonus .bonus_btn{
+    margin-top: 52px;
 }
 
 .more{
@@ -116,12 +120,12 @@ h2.title {
 }
 
 .waiting {
-    height: 604px;
+    min-height: 604px;
     background-color: #efefef;
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header  {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -131,12 +135,16 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting_divider {
+.waiting .waiting_divider, .finish .finish_divider {
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
     margin: 0 auto;
     margin-top: 18px;
+}
+
+.finish .finish_header{
+    color: #fff;
 }
 
 .waiting .waiting_subheader {
@@ -150,13 +158,12 @@ h2.title {
 }
 
 .waiting .waiting_wrapper{
+    display: flex;
+    justify-content: space-between;
     margin-top: 45px;
 }
 
 .waiting .waiting_wrapper .waiting_item{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
     width: 339px;
     text-align: center;    
 }
@@ -171,4 +178,167 @@ h2.title {
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
+}
+
+.optimization{
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header{
+    margin-left: 391px;
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.optimization .optimization_text{
+    margin-top: 25px;
+    margin-left: 391px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 27px;
+    
+}
+
+.optimization .optimization_text span{
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/bg/second_bg.png') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item{
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr{
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.bonus{
+    min-height: 628px;
+    padding: 86px 0 79px 0;
+    background-color: #efefef;
+}
+
+.bonus .bonus_text{
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 52px;
+}
+
+.bonus .bonus_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.date{
+    min-height: 515px;
+    background-color: #fff;
+}
+
+.date .date_text{
+    margin-top: 77px;
+}
+.date .date_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.date .date_head{
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.date .date_when{
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.date .date_havetime{
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer {
+    min-height: 166px;
+    background-color: #1a1a1a;
+    padding: 61px 0 69px 0;
+}
+
+.info {
+    margin: 0 auto;
+    width: 377px;
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+footer a {
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
 }
